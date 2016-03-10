@@ -1,0 +1,35 @@
+{{> header}}
+
+
+<section class="hero is-primary is-left">
+  <div class="hero-header">
+    <header class="header">
+      {{> navigation}}
+    </header>
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <h1 class="title"><strong>{{#post}}{{title}}{{/post}}</strong></h1>
+      <h2 class="subtitle">
+        Game development, CSS frameworks and other shenanigans
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+
+    {{#post}}
+    <div class="row">
+      <div class="column">
+        <section class="section">
+            {{{body}}}
+        </article>
+      </div>
+    </div>
+    {{/post}}
+
+</div>
+
+{{> footer}}
