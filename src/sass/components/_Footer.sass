@@ -1,5 +1,10 @@
 .footer
   background: $tertiary
   padding: 4rem 2rem 8rem
-  svg .logo-footer
-    fill: $primary
+  svg
+    +media(mobile)
+      width: 100%
+    +media(tablet)
+      max-width: 38.5rem
+    .logo-footer
+      fill: $primary

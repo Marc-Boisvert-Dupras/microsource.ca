@@ -1026,6 +1026,12 @@ pre {
 .footer {
   background: #f4f5f6;
   padding: 4rem 2rem 8rem; }
+  @media screen and (max-width: 79.99rem) {
+    .footer svg {
+      width: 100%; } }
+  @media screen and (min-width: 80rem) {
+    .footer svg {
+      max-width: 38.5rem; } }
   .footer svg .logo-footer {
     fill: #FFAB00; }
 
